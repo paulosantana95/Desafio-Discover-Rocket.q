@@ -1,0 +1,124 @@
+/*======= VARIAVEIS ======*/
+:root {
+    /* COLORS */
+    --black: #0D114F;
+    --white: #FAFAFA;
+    --red: #E83F5B;
+    --light-blue: #E0ECFF;
+    --blue: #3485FF;
+    --background: #F6FAFF;
+    --overlay: #040911;
+    --icons-details: #A5B0C1;
+    /* GREY */
+    --grey-dark: #4D5E77;
+    --grey-blue: #A1B2CD;
+    --grey-light: #E5EAF1;
+    /* HOVER */
+
+
+    /* FONTS */
+    --font-title:'Poppins', sans-serif;
+    --font-text:'Open Sans', sans-serif;
+
+}
+
+
+/*====== RESET CSS =====*/
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+html {
+
+    /* 1rem = 16px (User Agent) = 100% (User Agent) */
+    font-size: 62.5%; /* 10px */
+}
+
+body {
+    height: 100vh;
+    background: var(--background);
+}
+
+body, button, input, textarea {
+    /* Intervalo de tamanho */
+    font-size: clamp(14px, 1.6rem, 2vw);
+
+    font-family: var(--font-text);
+
+}
+
+/* Código tailwind para esconder o label na tela, mas ainda assim aparecer nos motores de buscas */
+.sr-only {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/*======= HEADER =====*/
+
+.content header {
+    width: 80%;
+    margin: 3.5rem auto;
+}
+
+.content header img {
+    width: 16.7rem;
+}
+
+
+/*======= LAYOUT =====*/
+.content {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/*======= input and buttons =====*/
+input, button, .button {
+    border-radius: 0.8rem;
+    height: 5rem;
+}
+
+button, .button {
+    font-family: var(--font-title);
+    font-weight: 500;
+    line-height: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--blue);
+    color: var(--white);
+
+    transition: filter 0.2s;
+
+    cursor: pointer;
+}
+
+button:hover, .button:hover {
+    filter: brightness(1.2);
+}
+
+button > img .button > img {
+    margin-right: 1rem;
+    width: 2rem;
+}
+
+button.outlined,
+.button.outlined {
+    background: var(--white);
+    color: var(--blue);
+    border: 0.2rem solid var(--blue);
+}
