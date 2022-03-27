@@ -108,7 +108,21 @@
 
 .question-wrapper .question-content {
     display: flex;
+    align-items: flex-start;
+}
+
+.question-wrapper .question-content .user {
+    background: var(--blue);
+    clip-path: circle();
+    padding: 1.4rem;
+}
+
+.question-wrapper .question-content p {
+    display: flex;
     align-items: center;
+    min-height: 5.2rem ;
+    margin-left: 1.6rem;
+    word-break: break-word;
 }
 
 .question-wrapper .actions {
@@ -122,4 +136,21 @@
     align-items: center;
 }
 
+.question-wrapper .actions > a img {
+    margin-right: 0.8rem;
+}
 
+.question-wrapper .actions > a + a {
+    margin-left: 2.4rem;
+}
+
+
+/* QUESTION READ */
+
+.question-wrapper.read {
+    background: var(--grey-medium);
+}
+
+.question-wrapper.read .question-content .user {
+    background: var(--grey-blue);
+}
