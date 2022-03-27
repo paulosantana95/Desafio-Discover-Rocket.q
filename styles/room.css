@@ -98,3 +98,28 @@
 
 
 /* Question Area */
+
+.question-wrapper {
+    background-color: var(--light-blue);
+    margin-bottom: 0.8rem;
+    border-radius: 0 0.8rem 0.8rem 0.8rem;
+    padding: 2.4rem;
+}
+
+.question-wrapper .question-content {
+    display: flex;
+    align-items: center;
+}
+
+.question-wrapper .actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.question-wrapper .actions > a {
+    display: flex;
+    align-items: center;
+}
+
+
