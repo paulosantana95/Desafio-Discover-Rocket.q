@@ -20,7 +20,9 @@
     <div id="home" class="content">
         <!-- logo -->
         <header>
-            <img src="images/logo.svg" alt="Rocket.q Logo"/>
+            <a href="/">
+                <img src="/images/logo.svg" alt="Rocket.q Logo"/>
+            </a>
         </header>
         <!-- /logo -->
 
@@ -33,30 +35,10 @@
 
         <main>
             <div class="container">
-                <section>
-                    <h2>Entre como participante</h2>
-                    <form action="">
-                        <label class="sr-only" for="room-id">Código da sala</label>
-                        <input type="number" id="room-id" placeholder="Código da sala">
-                        <button>
-                            <img src="images/enter-room.svg" alt="Entrar na sala">
-                            Entrar na sala</button>
-                    </form>
-                </section>
-            
-                <div class="separator">
-                    <div></div>
-                    <div>ou</div>
-                    <div></div>
-                </div>
-                
-                <section>
-                    <h2>Crie sua própria sala de forma fácil</h2>
-                    <a class="button outlined" href="create-room.html">
-                        <img src="images/users.svg" alt="Criar Sala">
-                        Criar Sala
-                    </a>
-                </section>
+                <!-- Vai redererizar a parte correta de acordo com a URL -->
+
+                <%- include(`parts/${page}`)  %>
+
             </div>
         </main>
     
