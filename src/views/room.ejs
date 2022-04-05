@@ -29,7 +29,7 @@
             </a>
 
             <div class="buttons">
-                <div class="button outlined">
+                <div class="button outlined" id="room-id" data-id="323243">
                     #323243
                     <img src="images/copy 1.svg" alt="Copiar número da sala">
                 </div>
@@ -75,11 +75,11 @@
                         </div>
                         
                         <div class="actions"><!--question actions-->
-                            <a href="#" class="check">
+                            <a href="#" class="check" data-id="2">
                                 <img src="images/check.svg" alt="Marcar como lido">
                                 Marcar como lido
                             </a>
-                            <a href="#" class="delete">
+                            <a href="#" class="delete" data-id="2">
                                 <img src="images/trash.svg" alt="Excluir">
                                 Excluir
                             </a>
@@ -100,18 +100,18 @@
                     </div>
                     
                     <div class="actions"><!--question actions-->
-                        <a href="#" class="check">
+                        <a href="#" class="check" data-id="3">
                             <img src="images/check.svg" alt="Marcar como lido">
                             Marcar como lido
                         </a>
-                        <a href="#" class="delete">
+                        <a href="#" class="delete" data-id="3">
                             <img src="images/trash.svg" alt="Excluir">
                             Excluir
                         </a>
                     </div>
                 </div>
 
-            <div class="question-wrapper read"><!--Question Area-->
+            <div class="question-wrapper"><!--Question Area-->
                 <div class="question-content"><!--Content question-->
                     
                     <div class="user"><!--avatar question-->
@@ -124,11 +124,11 @@
                 </div>
                 
                 <div class="actions"><!--question actions-->
-                    <a href="#" class="check">
+                    <a href="#" class="check" data-id="4">
                         <img src="images/check.svg" alt="Marcar como lido">
                         Marcar como lido
                     </a>
-                    <a href="#" class="delete">
+                    <a href="#" class="delete" data-id="4">
                         <img src="images/trash.svg" alt="Excluir">
                         Excluir
                     </a>
@@ -148,11 +148,11 @@
                 </div>
                 
                 <div class="actions"><!--question actions-->
-                    <a href="#" class="check">
+                    <a href="#" class="check" data-id="1">
                         <img src="images/check.svg" alt="Marcar como lido">
                         Marcar como lido
                     </a>
-                    <a href="#" class="delete">
+                    <a href="#" class="delete" data-id="1">
                         <img src="images/trash.svg" alt="Excluir">
                         Excluir
                     </a>
@@ -174,7 +174,7 @@
             <h2>Excluir Pergunta</h2>
             <p>Tem certeza que você deseja excluir esta pergunta?</p>
 
-            <form action="#">
+            <form action="#" method="POST">
                 <label class="sr-only" for-id="password">Digite sua senha</label>
                 <input type="password" id="password" name="password" placeholder="Digite sua senha" />
 
